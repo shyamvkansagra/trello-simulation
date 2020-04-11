@@ -1,4 +1,4 @@
-const getTasks = JSON.parse(window.localStorage.getItem("tasks"));
+const getTasks = JSON.parse(window.localStorage.getItem("tasks")) || [];
 const setTasks = (tasks) => window.localStorage.setItem("tasks", JSON.stringify(tasks));
 
 const DataApis = {
@@ -8,7 +8,7 @@ const DataApis = {
 		}
 	},
 	createTask: (status) => {
-		const tasks = getTasks;
+		const tasks = getTasks || [];
 		tasks.push({
 			id: +new Date(),
 			content: "",
