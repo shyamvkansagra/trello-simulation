@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DataApis from './api/api';
+
+import TrelloBoard from './TrelloBoard/TrelloBoard';
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <header className="App-header">
         <h1>Trello simulation</h1>  
       </header>
+      <TrelloBoard DataApis={DataApis} />
     </div>
   );
 }
