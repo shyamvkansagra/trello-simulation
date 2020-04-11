@@ -5,6 +5,7 @@ import DataApis from './api/api';
 import TrelloBoard from './TrelloBoard/TrelloBoard';
 
 function App() {
+  DataApis.checkAndInit();
   return (
     <div className="App">
       <header className="App-header">
