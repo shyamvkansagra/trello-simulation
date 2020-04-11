@@ -70,7 +70,7 @@ export default class TrelloBoard extends Component {
 					onDragOver={e => this.onDragOver(e)}
 					onDrop={e => this.onDrop(e, "todo")}
 				>
-					<h2 className="">TODO</h2>
+					<h2>To-do</h2>
 					{tasks.todo}
 					<button className="add-task-btn" onClick={() => this.addTask("todo")}>+ Add task</button>
 				</div>
@@ -79,7 +79,7 @@ export default class TrelloBoard extends Component {
 					onDragOver={(e) => this.onDragOver(e)}
 					onDrop={(e) => this.onDrop(e, "wip")}
 				>
-					<h2 className="">IN PROGRESS</h2>
+					<h2>In Progress</h2>
 					{tasks.wip}
 					<button className="add-task-btn" onClick={() => this.addTask("wip")}>+ Add task</button>
 				</div>
@@ -88,7 +88,7 @@ export default class TrelloBoard extends Component {
 					onDragOver={(e) => this.onDragOver(e)}
 					onDrop={(e) => this.onDrop(e, "done")}
 				>
-					<h2 className="">DONE</h2>
+					<h2>Done</h2>
 					{tasks.done}
 					<button className="add-task-btn" onClick={() => this.addTask("done")}>+ Add task</button>
 				</div>
